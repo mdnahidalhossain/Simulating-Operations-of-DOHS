@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.UserLandlordSceneController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="732.0" layoutX="-2.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../DOHSImage/dohs_logo-01.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="564.0" layoutY="403.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: white;" text="Log Out" />
+            <Label layoutX="55.0" layoutY="402.0" text="User: LandLord" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="614.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="apartmentBar" mnemonicParsing="false" text="Apartment">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#postForNewApartmentButtonOnClick" text="Post for New Apartment" />
+                  <MenuItem mnemonicParsing="false" onAction="#checkForRentsBottunOnClick" text="Check For Rents" />
+                  <MenuItem mnemonicParsing="false" onAction="#tenantRequestButtonOnClick" text="Tenant's Requests" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Maintenance Office">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#requestForRenovationButtonOnClick" text="Request for Renovations" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Accounts Office">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="DOHS Committee">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#checkForMeetingButtonOnClick" text="Check For Meetings" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Security Department">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#postForEmergencyButtonOnClick" text="Post for Emergencies" />
+                  <MenuItem mnemonicParsing="false" onAction="#contactSecurityBottonOnClick" text="Contact Security" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

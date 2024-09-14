@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.SalaryController">
+   <children>
+      <TextField fx:id="Namefx" layoutX="147.0" layoutY="63.0" promptText="Emplyee Name" />
+      <TextField fx:id="Amountfx" layoutX="147.0" layoutY="120.0" promptText="Ammount" />
+      <ComboBox fx:id="Comboboxpick" layoutX="146.0" layoutY="92.0" prefWidth="150.0" promptText="Emplyee Ocation" />
+      <Button layoutX="194.0" layoutY="162.0" mnemonicParsing="false" onAction="#SubmitButton" text="Submit" />
+      <TextArea fx:id="ViewSalary" layoutX="326.0" layoutY="48.0" prefHeight="114.0" prefWidth="200.0" />
+      <BorderPane layoutY="191.0" prefHeight="210.0" prefWidth="600.0" style="-fx-background-color: pink;">
+         <right>
+            <TextArea fx:id="GenerateSalaryTXt" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Button mnemonicParsing="false" onAction="#ViewSalary" prefHeight="26.0" prefWidth="143.0" text="View Genarate Salary" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#BackButton" text="Back" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

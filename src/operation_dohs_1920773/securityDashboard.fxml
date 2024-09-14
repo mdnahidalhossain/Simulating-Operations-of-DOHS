@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.SecurityDashBoardController">
+   <center>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@Images/securityImage.png" />
+         </image>
+      </ImageView>
+   </center>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="58.0" layoutY="199.0" mnemonicParsing="false" onAction="#ViewProfielButtonOnClick" text="View Profiel" />
+            <Button layoutX="26.0" layoutY="243.0" mnemonicParsing="false" onAction="#addSecurityWorkers" text="Add Security Workers" />
+            <Button layoutX="13.0" layoutY="287.0" mnemonicParsing="false" onAction="#addEmergencyWorkers" text="Add Emergemcy Workers" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="40.0" layoutY="195.0" mnemonicParsing="false" onAction="#notificationButtonOnClick" text="Notifications" />
+            <Button layoutX="47.0" layoutY="240.0" mnemonicParsing="false" onAction="#objectionbuttonOnClick" text="Objections" />
+            <Button layoutX="32.0" layoutY="283.0" mnemonicParsing="false" onAction="#workerStatusButtonOnclick" text="Workers Status" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <Label text="SECURITY" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#logoutButtononclick" text="Logout" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

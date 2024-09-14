@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.ComplaintDetailSceneController">
+   <children>
+      <Label layoutX="62.0" layoutY="96.0" text="Complaint Title:" />
+      <Label layoutX="62.0" layoutY="140.0" text="Tenant Name:" />
+      <Label layoutX="62.0" layoutY="187.0" text="Building No:" />
+      <Label layoutX="62.0" layoutY="226.0" text="Flat No:" />
+      <Label layoutX="62.0" layoutY="267.0" text="Complaint Details:" />
+      <Label layoutX="182.0" layoutY="27.0" text="Request Details:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="complaintTitleLabel" layoutX="204.0" layoutY="96.0" text="Label" />
+      <Label fx:id="tenantNameLabel" layoutX="204.0" layoutY="140.0" text="Label" />
+      <Label fx:id="buildingNoLabel" layoutX="204.0" layoutY="187.0" text="Label" />
+      <Label fx:id="flatNoLabel" layoutX="204.0" layoutY="226.0" text="Label" />
+      <Label fx:id="complaintDetailLabel" layoutX="204.0" layoutY="267.0" text="Label" />
+   </children>
+</AnchorPane>

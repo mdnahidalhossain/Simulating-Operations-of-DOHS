@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="736.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="operation_dohs_1920773.WorkersStatusController">
+   <children>
+      <Label layoutX="478.0" layoutY="19.0" text="Emergency Workers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="19.0" text="Security Workers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="workerstextField" layoutX="10.0" layoutY="56.0" prefHeight="485.0" prefWidth="328.0" />
+      <TextArea fx:id="emergencyWorkerstextField" layoutX="399.0" layoutY="54.0" prefHeight="485.0" prefWidth="328.0" />
+      <Button layoutX="133.0" layoutY="541.0" mnemonicParsing="false" onAction="#vievWorkers" text="View" />
+      <Button layoutX="537.0" layoutY="541.0" mnemonicParsing="false" onAction="#vievEmergencyWorkers" text="View" />
+      <Button layoutX="308.0" layoutY="541.0" mnemonicParsing="false" onAction="#dashBoardOnClick" prefHeight="31.0" prefWidth="121.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

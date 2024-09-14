@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.CheckForRentsSceneController">
+   <children>
+      <Button layoutX="39.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="25.0" prefWidth="79.0" text="Go Back" />
+      <TableView fx:id="checkRentTableView" layoutX="39.0" layoutY="96.0" prefHeight="309.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="tenantNameColumn" prefWidth="104.0" text="Tenant Name" />
+          <TableColumn fx:id="buildingNoColumn" prefWidth="87.0" text="Building No." />
+            <TableColumn fx:id="flatNoColumn" prefWidth="58.0" text="Flat No." />
+            <TableColumn fx:id="transactionIdColumn" prefWidth="134.0" text="Transaction Id" />
+            <TableColumn fx:id="amountPaidColumn" prefWidth="112.0" text="Amount Paid" />
+            <TableColumn fx:id="paymentProcessColumn" prefWidth="115.0" text="Payment Process" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="70.0" text="Paid Rents:" />
+      <Button layoutX="377.0" layoutY="418.0" mnemonicParsing="false" onAction="#saveRentDetailsTXTButtonOnClick" prefHeight="25.0" prefWidth="124.0" text="Save Rent Details.txt" />
+      <Button layoutX="39.0" layoutY="418.0" mnemonicParsing="false" onAction="#deletePostButtonOnClick" prefHeight="25.0" prefWidth="104.0" text="Delete Post" />
+      <Button layoutX="546.0" layoutY="418.0" mnemonicParsing="false" onAction="#viewDetailButtonOnClick" prefHeight="25.0" prefWidth="104.0" text="View Details" />
+   </children>
+</AnchorPane>

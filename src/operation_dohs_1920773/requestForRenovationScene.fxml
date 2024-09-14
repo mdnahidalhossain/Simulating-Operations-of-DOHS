@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.RequestForRenovationSceneController">
+   <children>
+      <Button layoutX="43.0" layoutY="30.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="25.0" prefWidth="77.0" text="Go Back" />
+      <Label layoutX="43.0" layoutY="85.0" text="Post a request:" />
+      <Button layoutX="448.0" layoutY="435.0" mnemonicParsing="false" onAction="#submitRequestButtonOnClick" prefHeight="25.0" prefWidth="113.0" text="Submit Request" />
+      <TableView fx:id="renovationRequestTableView" layoutX="43.0" layoutY="214.0" prefHeight="200.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="buildingNoColumn" prefWidth="75.0" text="Building No." />
+          <TableColumn fx:id="floorColumn" prefWidth="75.0" text="Floor" />
+            <TableColumn fx:id="flatNoColumn" prefWidth="75.0" text="Flat No." />
+            <TableColumn fx:id="nameColumn" prefWidth="111.0" text="Name" />
+            <TableColumn fx:id="queryColumn" prefWidth="179.0" text="Query" />
+        </columns>
+      </TableView>
+      <Button layoutX="320.0" layoutY="435.0" mnemonicParsing="false" onAction="#removeRequestButtonOnClick" text="Remove Request" />
+      <TextField fx:id="buildingNoTextField" layoutX="43.0" layoutY="121.0" promptText="Building No." />
+      <TextField fx:id="floorTextField" layoutX="227.0" layoutY="121.0" promptText="Floor" />
+      <TextField fx:id="flatNoTextField" layoutX="410.0" layoutY="121.0" promptText="Flat No." />
+      <TextField fx:id="enterNameTextField" layoutX="43.0" layoutY="168.0" promptText="Enter Your name" />
+      <TextField fx:id="queryTextField" layoutX="227.0" layoutY="168.0" promptText="Your Qeury In Short" />
+   </children>
+</AnchorPane>

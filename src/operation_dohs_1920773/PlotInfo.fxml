@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ff884d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.PlotInfoController">
+   <children>
+      <Button layoutX="129.0" layoutY="200.0" mnemonicParsing="false" onAction="#AddPlotButtonClick" prefHeight="25.0" prefWidth="75.0" text="Add plot" textFill="#d11986" />
+      <Button layoutX="129.0" layoutY="237.0" mnemonicParsing="false" onAction="#DeletePlotButtonClick" text="Delete plot" />
+      <TextField fx:id="plotnumText" layoutX="99.0" layoutY="84.0" promptText="Enter Plot No" />
+      <TableView fx:id="Tableview" layoutX="318.0" layoutY="63.0" prefHeight="200.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="RoadNoColumn" prefWidth="75.0" text="Road no" />
+          <TableColumn fx:id="PlotNoColumn" prefWidth="75.0" text="Plot no" />
+            <TableColumn fx:id="AreaColumn" prefWidth="75.0" text="Area" />
+        </columns>
+      </TableView>
+      <TextField fx:id="Roadnofx" layoutX="99.0" layoutY="117.0" promptText="Enter Road No" />
+      <TextField fx:id="Areafx" layoutX="99.0" layoutY="150.0" promptText="Area" />
+      <Button layoutX="39.0" layoutY="38.0" mnemonicParsing="false" onAction="#goBackButtonOnCLick" text="Go Back" />
+   </children>
+</AnchorPane>

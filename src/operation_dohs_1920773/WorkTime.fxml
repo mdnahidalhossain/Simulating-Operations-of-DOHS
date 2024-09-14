@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="operation_dohs_1920773.WorkTimeController">
+   <children>
+      <ComboBox fx:id="ChooseComboBox" layoutX="79.0" layoutY="108.0" prefWidth="150.0" promptText="Choose Shot" />
+      <Button layoutX="256.0" layoutY="108.0" mnemonicParsing="false" onAction="#EnterButtonOnClick" text="Enter" />
+      <TableView fx:id="table" layoutX="113.0" layoutY="156.0" prefHeight="200.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="idcolumn" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="timecolumn" prefWidth="133.5999755859375" text="Time" />
+            <TableColumn fx:id="zoneColumn" prefWidth="89.60001220703123" text="Zone" />
+        </columns>
+      </TableView>
+      <Button layoutX="532.0" layoutY="356.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back" />
+      <Text layoutX="289.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emplyee time" />
+   </children>
+</AnchorPane>

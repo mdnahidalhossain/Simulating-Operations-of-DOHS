@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.CheckBalanceController">
+   <children>
+      <Button layoutX="143.0" layoutY="188.0" mnemonicParsing="false" onAction="#CheckalanceButtonOnClick" prefHeight="25.0" prefWidth="109.0" text="Check Balance" />
+      <Button layoutX="143.0" layoutY="138.0" mnemonicParsing="false" onAction="#AddBalanceButtonOnClick" prefHeight="25.0" prefWidth="109.0" text="Add Balance" />
+      <Button layoutX="143.0" layoutY="235.0" mnemonicParsing="false" onAction="#miniBalanceButtonOnClick" prefHeight="19.0" prefWidth="109.0" text="Minimize Balance" />
+      <TextField fx:id="Amount" layoutX="129.0" layoutY="100.0" prefHeight="25.0" prefWidth="138.0" promptText="Enter Amount" />
+      <TextArea fx:id="outputtext" layoutX="319.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="531.0" layoutY="349.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="26.0" prefWidth="47.0" text="Back" />
+   </children>
+</AnchorPane>

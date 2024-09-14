@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.EmergencyWorkersController">
+   <children>
+      <Label layoutX="198.0" layoutY="27.0" text="New Emergency Worker">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="104.0" text="First Name:" />
+      <Label layoutX="102.0" layoutY="138.0" text="Last Name" />
+      <Label layoutX="102.0" layoutY="190.0" text="Gender:" />
+      <Label layoutX="102.0" layoutY="224.0" text="Phone Number:" />
+      <TextField fx:id="firstNameTextField" layoutX="230.0" layoutY="99.0" />
+      <TextField fx:id="lastNameTextField" layoutX="230.0" layoutY="144.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="230.0" layoutY="219.0" />
+      <RadioButton fx:id="maleRadioButton" layoutX="230.0" layoutY="190.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="femaleRadioButton" layoutX="340.0" layoutY="190.0" mnemonicParsing="false" text="Female" toggleGroup="$Gender" />
+      <Button layoutX="318.0" layoutY="317.0" mnemonicParsing="false" onAction="#dashBoardButtonOnClick" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="175.0" layoutY="317.0" mnemonicParsing="false" onAction="#addWorkerButtonOnClick" text="Add Worker">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

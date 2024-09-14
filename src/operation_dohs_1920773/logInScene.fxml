@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="720.0" style="-fx-background-color: #434952;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.LogInSceneController">
+   <children>
+      <AnchorPane layoutX="324.0" layoutY="37.0" prefHeight="426.0" prefWidth="332.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="127.0" layoutY="42.0" text="Sign In" textFill="#262626">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameTextField" layoutX="43.0" layoutY="116.0" prefHeight="35.0" prefWidth="255.0" promptText="Enter User Name" />
+            <PasswordField fx:id="passwordField" layoutX="43.0" layoutY="188.0" prefHeight="35.0" prefWidth="255.0" promptText="Enter Password" />
+            <Button layoutX="43.0" layoutY="271.0" mnemonicParsing="false" onAction="#loginButtonOnClick" prefHeight="35.0" prefWidth="255.0" style="-fx-background-color: #434952;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="alertLabel" layoutX="43.0" layoutY="233.0" textFill="#b50303" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="48.0" layoutY="381.0" text="Simulation" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="408.0" text="DOHS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

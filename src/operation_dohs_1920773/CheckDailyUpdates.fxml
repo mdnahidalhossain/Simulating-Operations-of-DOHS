@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="operation_dohs_1920773.CheckDailyUpdatesController">
+   <children>
+      <ComboBox fx:id="ObserveComboBox" layoutX="52.0" layoutY="95.0" onAction="#ObserveComboBoxOnAction" prefWidth="150.0" promptText="Observe Todays Activities" />
+      <Button layoutX="284.0" layoutY="95.0" mnemonicParsing="false" onAction="#FeedbackButtonOnClick" text="Feedback" />
+      <Text layoutX="211.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Updates">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="ObservationOutputText" layoutX="27.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="FeedbackOutputText" layoutX="235.0" layoutY="140.0" prefHeight="200.0" prefWidth="177.0" />
+      <Text layoutX="470.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notification">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="Notification" layoutX="423.0" layoutY="140.0" prefHeight="200.0" prefWidth="177.0" />
+   </children>
+</AnchorPane>

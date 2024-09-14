@@ -1,0 +1,14 @@
+
+Complaint Title: 24, Wall Street
+Tenant Name: 247
+Building No: A08
+Apartment Details: 3 Beds, 2 Bath, 1 Dining, etc
+Rental Cost: 25000
+Phone No: 01784952368
+
+Complaint Title: 15, Lamp Street
+Tenant Name: 456
+Building No: B08
+Apartment Details: 2 Beds, 2 Baths, 1 Dining, etc
+Rental Cost: 15000
+Phone No: 01678489452

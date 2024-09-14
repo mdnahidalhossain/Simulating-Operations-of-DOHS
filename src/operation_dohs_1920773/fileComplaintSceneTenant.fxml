@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operation_dohs_1920773.FileComplaintSceneTenantController">
+   <children>
+      <Button layoutX="47.0" layoutY="37.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="25.0" prefWidth="73.0" text="Go Back" />
+      <TableView fx:id="complaintTableView" layoutX="53.0" layoutY="201.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="complaintTitleColumn" prefWidth="107.0" text="Complaint Tiltle" />
+          <TableColumn fx:id="nameColumn" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="buildingNoColumn" prefWidth="92.0" text="Building No." />
+            <TableColumn fx:id="flatNoColumn" prefWidth="73.0" text="Flat No." />
+            <TableColumn fx:id="complaintDetailColumn" prefWidth="226.0" text="Your Complain In Detail" />
+        </columns>
+      </TableView>
+      <Button layoutX="559.0" layoutY="420.0" mnemonicParsing="false" onAction="#postButtonOnClick" prefHeight="25.0" prefWidth="94.0" text="Post" />
+      <Button layoutX="53.0" layoutY="420.0" mnemonicParsing="false" onAction="#deletePostButtonOnClick" prefHeight="25.0" prefWidth="109.0" text="Delete Post" />
+      <TextField fx:id="complaintTitleTextField" layoutX="53.0" layoutY="99.0" promptText="Complaint Title" />
+      <TextField fx:id="nameTextField" layoutX="244.0" layoutY="99.0" promptText="Enter Your Name" />
+      <TextField fx:id="buildingNoTextField" layoutX="431.0" layoutY="99.0" promptText="Building No." />
+      <TextField fx:id="flatNoTextField" layoutX="53.0" layoutY="149.0" promptText="Flat No." />
+      <TextField fx:id="complainDetailTextField" layoutX="244.0" layoutY="149.0" prefHeight="25.0" prefWidth="338.0" promptText="Write Your Complain In Detail" />
+      <Label layoutX="272.0" layoutY="32.0" text="File Complaint">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
